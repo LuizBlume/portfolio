@@ -2,7 +2,7 @@
   <footer>
     <div class="footer">
       <div class="footer-logo">
-        <img src="../assets/logo.png" alt="logo" />
+        <img src="../assets/images/eu.jpg" alt="Owner" class="dono"/>
       </div>
       <div class="footer-social">
         <a href="www.linkedin.com/in/luiz-fernando-blume-jacinto-532447280" target="_blank">
@@ -18,7 +18,7 @@
             <img src="../assets/images/github-icon.png" alt="github" class="icons" /></div
         ></a>
       </div>
-      <div class="footer__links">
+      <div class="footer-links">
         <a href="#">About</a>
         <a href="#">Contact</a>
         <a href="#">Terms of Use</a>
@@ -56,12 +56,19 @@
   justify-content: center;
   align-items: center;
   margin: 0 10px;
+  transition: background-color 0.5s, box-shadow 0.5s, transform 0.5s;
 }
 .icons-background:hover {
   background-color: rgba(192, 192, 192, 0.9);
-  box-shadow: 1px 1px 10px 10px #900ECD;
+  box-shadow: 1px 1px 10px 10px #900ecd;
   transition: 1s;
-  scale: 1.1;
+  transform: scale(1.1);
+}
+.dono {
+    width: 170px;
+    height: 230px;
+    border-radius: 50%;
+    margin: 0 10px;
 }
 </style>
 <script setup>
